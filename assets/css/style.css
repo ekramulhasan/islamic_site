@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+body {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Poppins', sans-serif;
+}
+
+img {
+    width: 100%;
+}
+
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+
+
+.header-area {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    position: fixed;
+left: 0;
+right: 0;
+top: 0;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.menu ul li{
+    position: relative;
+}
+
+
+.menu ul li a {
+    text-decoration: none;
+    font-size: 22px;
+    margin-right: 25px;
+    color: white;
+    text-transform: capitalize;
+    display: block;
+    transition: .3s;
+}
+
+.menu ul li a:hover {
+    color: bisque;
+    border-bottom: 1px solid white;
+}
+
+
+
+
+.welcome-area {
+    margin-top: 150px;
+    color: wheat;
+    text-transform: capitalize;
+  }
+  .welcome-area h4 {
+    display: inline-block;
+    font-size: 24px;
+    font-weight: 800;
+    margin: 10px 0;
+  }
+  .welcome-area p {
+    max-width: 43%;
+    font-size: 15px;
+    /*! font-weight: 600; */
+  }
+
+  .wel-btn {
+    margin-top: 35px;
+  }
+  .wel-btn a {
+    text-decoration: none;
+    color: #333;
+    background-color: white;
+    padding: 10px 30px;
+    /*! margin: 0 30px; */
+    margin-right: 5px;
+    border-radius: 20px;
+    font-weight: bold;
+  }
+
+  
+.wel-btn a:hover {
+    background-color: wheat;
+    
+  }
+
+
+
+  /* sub-menu  */
+
+.menu ul li ul{
+
+    position: absolute;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 220px;
+    padding: 10px 10px;
+    visibility: hidden;
+    opacity: 0;
+    transition: .3s;
+}  
+
+.menu ul li ul li a{
+
+    margin-bottom: 5px;
+}
+
+.menu ul li:hover ul{
+
+    visibility: visible;
+    opacity: 1;
+    margin-top: 20px;
+
+}
